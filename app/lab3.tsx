@@ -3,22 +3,24 @@ import { useState } from "react";
 import { Button, StyleSheet, Text, View } from "react-native";
 import Decrement from "../components/decrement";
 import Increment from "../components/increment";
-import { sub } from "date-fns";
+import Counter from "../components/counter"
 
-const lab3 = () => {
+const Lab3 = () => {
     const [value, setValue] = useState<number>(0);
     return(
         <View style={styles.container}>
-            <Text style={styles.text}>My value</Text>
+            <Counter />
             <View style={styles.container}>
                 <Increment value={value} setValue={setValue} />
+            </View>
+            <View style={styles.container}>
                 <Decrement value={value} setValue={setValue} />
             </View>
         </View>
     )
 }
 
-
+export default Lab3;
 
 
 const styles = StyleSheet.create({

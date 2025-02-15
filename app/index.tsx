@@ -7,6 +7,9 @@ import { Users } from "../constants/defaultTypes";
 import React from "react";
 import Decrement from "../components/decrement";
 import Increment from "../components/increment";
+import Lab3 from "./lab3";
+import Lab4 from "./lab4";
+import {Link } from "expo-router"
 
 const userObjectDefault: Users = {
   firstName: "felix",
@@ -18,21 +21,18 @@ const userObjectDefault: Users = {
 };
 
 export default function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
-  const [username, setUsername] = useState<string>("");
-  const [userObject, setUserObject] = useState<Users>(userObjectDefault);
-
-    const [value, setValue] = useState<number>(0);
     return(
         <View style={styles.container}>
-            <Text style={styles.text}>My value: {value}</Text>
-            <View style={styles.container}>
-              <Increment value={value} setValue={setValue} />
-            </View>
-            <View style={styles.container}>
-              <Decrement value={value} setValue={setValue} />
-            </View>
+            <Link href={"/lab3"}><Text>Go to Lab 3</Text></Link>
+            <Text></Text>
+            <Text></Text>
+            <Text></Text>
+            <Text></Text>
+
+            <Link href={"/lab4"}><Text>Go to Lab 4</Text></Link>
         </View>
+
+        
     )
 }
 
