@@ -9,6 +9,7 @@ import Decrement from "../components/decrement";
 import Increment from "../components/increment";
 import Lab3 from "./lab3";
 import Lab4 from "./lab4";
+import Lab5 from "./lab5";
 import {Link } from "expo-router"
 
 const userObjectDefault: Users = {
@@ -30,6 +31,11 @@ export default function App() {
             <Text></Text>
 
             <Link href={"/lab4"}><Text>Go to Lab 4</Text></Link>
+            <Text></Text>
+            <Text></Text>
+            <Text></Text>
+            <Text></Text>
+            <Link href={"/lab5"}><Text>Go to Lab 5</Text></Link>
         </View>
 
         
