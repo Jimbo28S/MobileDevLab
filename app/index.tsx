@@ -10,7 +10,7 @@ import Increment from "../components/increment";
 import Lab3 from "./lab3";
 import Lab4 from "./lab4";
 import Lab5 from "./lab5";
-import {Link } from "expo-router"
+import { Link } from "expo-router"
 
 const userObjectDefault: Users = {
   firstName: "felix",
@@ -35,7 +35,11 @@ export default function App() {
             <Text></Text>
             <Text></Text>
             <Text></Text>
-            <Link href={"/lab5"}><Text>Go to Lab 5</Text></Link>
+            <Link href={"/lab5"}><Text>Go to Lab 5</Text></Link><Text></Text>
+            <Text></Text>
+            <Text></Text>
+            <Text></Text>
+            <Link href={"/lab6"}><Text>Go to Lab 6</Text></Link>
         </View>
 
         
